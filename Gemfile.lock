@@ -130,6 +130,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
+    psych (4.0.4)
+      stringio
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -164,6 +166,9 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    rb-readline (0.5.5)
+    rdoc (6.4.0)
+      psych (>= 4.0.0)
     regexp_parser (2.4.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -183,6 +188,7 @@ GEM
     sqlite3 (1.4.2)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
+    stringio (3.0.2)
     strscan (3.0.3)
     thor (1.2.1)
     timeout (0.3.0)
@@ -219,6 +225,8 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.3)
+  rb-readline (~> 0.5.5)
+  rdoc (~> 6.4.0)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
