@@ -1,5 +1,9 @@
 class ArticlesController < ApplicationController
 
+
+  def show
+    @article = Article.find(params[:id])
+  end
   def index
 
   end
@@ -11,6 +15,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     if @article.valid?
       @article.save
+      redirect_to @article
     else
       render action: 'new'
     end
