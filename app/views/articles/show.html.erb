@@ -8,3 +8,10 @@
   <%= f.text_area :body %><br>
   <%= f.submit %>
 <% end %>
+<hr>
+<h2>Сomments</h2>
+
+<% @article.comments.each do |comment| %>
+  <h3><%= comment.author %></h3>
+  <p><%= comment.body %></p>
+<% end %>

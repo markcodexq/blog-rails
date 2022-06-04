@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   resource :contacts, only: [:new, :create]
   resources :articles do
-    resources :comments
+    resources :comments, only: [:new, :create, :show]
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -6,10 +6,6 @@ class CommentsController < ApplicationController
     redirect_to article_path(@article)
   end
 
-  def show
-    
-  end
-
   private
 
   def article_comments
