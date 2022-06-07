@@ -11,6 +11,8 @@
   </head>
 
   <body>
+  <a href="/users/sign_in">Sign In</a>
+  <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
